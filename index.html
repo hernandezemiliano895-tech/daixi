@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dce8d1">
+  <meta name="description" content="Daixi Spa: masajes, rituales de bienestar y productos para cuidar de ti.">
+  <title>Daixi Spa | Un espacio para volver a ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estylos.css">
+  <script src="Script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Daixi Spa, inicio">
+      <span class="brand-mark" aria-hidden="true">d</span>
+      <span class="brand-name">daixi<span>spa</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#paquetes">Paquetes</a>
+      <a href="#productos">Productos</a>
+      <a href="#membresia">Membresía</a>
+      <a href="#citas">Agendar cita</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="header-actions">
+      <span class="welcome-user" id="welcomeUser"></span>
+      <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span>Carrito</span><span class="cart-count hidden" id="cartCount">0</span>
+      </button>
+      <button class="button button-outline button-small" id="accountButton">Iniciar sesión</button>
+      <button class="button button-text button-small hidden" id="logoutButton">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> TU MOMENTO, TU ESPACIO</p>
+        <h1>Regálate un respiro.<br><em>Te lo mereces.</em></h1>
+        <p class="hero-description">Un refugio de calma para reconectar contigo. Déjanos cuidar de ti, un masaje a la vez.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#citas">Reserva tu momento <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#paquetes">Descubre nuestros rituales <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-stars" aria-label="5 estrellas">★★★★★</span><span>Un lugar para sentirte bien, de verdad.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ambiente cálido y relajante de un spa">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Interior sereno de spa con luz natural">
+        <div class="hero-image-label"><span>DAIXI SPA</span><span>BIENESTAR CON INTENCIÓN</span></div>
+        <div class="floating-note"><span class="floating-icon">✳</span><span>Respira.<br>Este momento es tuyo.</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 — BIENESTAR</span><span>UN ESPACIO PARA VOLVER A TI</span><span>SCROLL PARA DESCUBRIR ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">MÁS QUE UN SPA</p>
+      <h2>Cuidarte no es un lujo.<br><em>Es volver a ti.</em></h2>
+      <p>Creamos cada experiencia para que sueltes el ruido, escuches tu cuerpo y salgas sintiéndote un poquito más tú.</p>
+      <span class="decorative-star" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="offer-section section-wrap" id="paquetes">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPERIENCIAS DAIXI</p><h2>Un ritual para <em>cada tú.</em></h2></div>
+        <p>Elige lo que necesitas hoy.<br>Nosotras nos encargamos del resto.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tratamiento de masaje en un spa" loading="lazy"><span class="image-number">01</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>EL FAVORITO</span><span>60 MIN</span></div><h3>Masaje relajante</h3><p>Movimientos suaves y aceites aromáticos para bajar el ritmo y volver a respirar.</p><div class="offer-footer"><strong>$850 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Masaje relajante" aria-label="Agendar masaje relajante">↗</button></div></div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tratamiento facial de cuidado de la piel" loading="lazy"><span class="image-number">02</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>PIEL EN CALMA</span><span>75 MIN</span></div><h3>Facial luminoso</h3><p>Limpieza profunda, hidratación y un masaje facial que se siente como vacaciones.</p><div class="offer-footer"><strong>$1,100 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Facial luminoso" aria-label="Agendar facial luminoso">↗</button></div></div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Ambiente tranquilo para un ritual de bienestar" loading="lazy"><span class="image-number">03</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>PAUSA COMPLETA</span><span>120 MIN</span></div><h3>Ritual de calma</h3><p>Exfoliación corporal, masaje con piedras y un té para cerrar el momento.</p><div class="offer-footer"><strong>$1,750 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Ritual de calma" aria-label="Agendar ritual de calma">↗</button></div></div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Masaje terapéutico de tejidos profundos" loading="lazy"><span class="image-number">04</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>ALIVIO PROFUNDO</span><span>75 MIN</span></div><h3>Masaje de tejidos profundos</h3><p>Presión firme y precisa para liberar tensión muscular y recuperar movilidad.</p><div class="offer-footer"><strong>$1,200 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Masaje de tejidos profundos" aria-label="Agendar masaje de tejidos profundos">↗</button></div></div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Masaje relajante con piedras calientes" loading="lazy"><span class="image-number">05</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>CALOR QUE RENUEVA</span><span>90 MIN</span></div><h3>Masaje con piedras calientes</h3><p>Piedras volcánicas tibias y movimientos lentos para relajar cuerpo y mente.</p><div class="offer-footer"><strong>$1,350 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Masaje con piedras calientes" aria-label="Agendar masaje con piedras calientes">↗</button></div></div>
+        </article>
+        <article class="offer-card">
+          <div class="offer-image"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Masaje de aromaterapia con aceites esenciales" loading="lazy"><span class="image-number">06</span></div>
+          <div class="offer-content"><div class="offer-meta"><span>AROMAS QUE ABRAZAN</span><span>60 MIN</span></div><h3>Masaje de aromaterapia</h3><p>Aceites esenciales y un masaje suave para descansar y reconectar con tus sentidos.</p><div class="offer-footer"><strong>$1,050 <small>MXN</small></strong><button class="round-arrow book-offer" data-service="Masaje de aromaterapia" aria-label="Agendar masaje de aromaterapia">↗</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="membership-section" id="membresia">
+      <div class="membership-art"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Espacio de masaje tranquilo y acogedor" loading="lazy"><span>DAIXI<br>RITUAL CLUB</span></div>
+      <div class="membership-copy"><p class="eyebrow">TU BIENESTAR, TODOS LOS DÍAS</p><h2>Haz del cuidado<br>un <em>hábito bonito.</em></h2><p>Con Ritual Club tienes un masaje relajante diario, prioridad para reservar y 15% de descuento en productos. Tu pausa favorita, cuando la necesites.</p><div class="membership-price"><strong>$2,490</strong><span>MXN / mes<br>cancela cuando quieras</span></div><button class="button button-dark" id="membershipButton">Quiero mi membresía <span aria-hidden="true">↗</span></button><span class="membership-footnote">* Membresía mensual. Sujeta a disponibilidad de horarios.</span></div>
+    </section>
+
+    <section class="products-section section-wrap" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">UN POQUITO DE DAIXI EN CASA</p><h2>Rituales que <em>te acompañan.</em></h2></div>
+        <p>Favoritos de nuestro spa,<br>para tu rutina de todos los días.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-art"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Aceites y productos de cuidado personal" loading="lazy"><span>01</span></div><div class="product-info"><div><h3>Aceite calma</h3><p>Lavanda · 120 ml</p></div><strong>$480</strong></div><button class="add-to-cart" data-product="aceite-calma">Agregar al carrito <span aria-hidden="true">+</span></button></article>
+        <article class="product-card"><div class="product-art"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Vela aromática para relajarse" loading="lazy"><span>02</span></div><div class="product-info"><div><h3>Vela ritual</h3><p>Sándalo · 200 g</p></div><strong>$390</strong></div><button class="add-to-cart" data-product="vela-ritual">Agregar al carrito <span aria-hidden="true">+</span></button></article>
+        <article class="product-card"><div class="product-art"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Productos naturales para el cuidado de la piel" loading="lazy"><span>03</span></div><div class="product-info"><div><h3>Exfoliante suave</h3><p>Azúcar y coco · 250 g</p></div><strong>$520</strong></div><button class="add-to-cart" data-product="exfoliante-suave">Agregar al carrito <span aria-hidden="true">+</span></button></article>
+        <article class="product-card"><div class="product-art"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Taza de infusión caliente" loading="lazy"><span>04</span></div><div class="product-info"><div><h3>Infusión descanso</h3><p>Manzanilla · 20 sobres</p></div><strong>$260</strong></div><button class="add-to-cart" data-product="infusion-descanso">Agregar al carrito <span aria-hidden="true">+</span></button></article>
+      </div>
+      <p class="product-note">Pregunta por disponibilidad de productos en recepción.</p>
+    </section>
+
+    <section class="booking-section" id="citas">
+      <div class="booking-intro"><p class="eyebrow">AQUÍ EMPIEZA TU PAUSA</p><h2>Tu momento<br>está <em>a un clic.</em></h2><p>Cuéntanos qué necesitas y encuentra el espacio perfecto para ti.</p><div class="booking-detail"><span>⌖</span><div><strong>Un espacio para ti</strong><br>Atención personalizada, en cada visita.</div></div><div class="booking-detail"><span>♡</span><div><strong>Con calma, siempre</strong><br>Estamos aquí para hacerte sentir bien.</div></div></div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-heading"><h3>Agenda tu cita</h3><p>Elige tu experiencia y nos vemos pronto.</p></div>
+        <label for="appointmentService">¿Qué te gustaría?</label>
+        <select id="appointmentService" name="service" required>
+          <option value="">Selecciona un servicio</option><option>Masaje relajante</option><option>Facial luminoso</option><option>Ritual de calma</option><option>Masaje de tejidos profundos</option><option>Masaje con piedras calientes</option><option>Masaje de aromaterapia</option><option>Otro servicio</option>
+        </select>
+        <div class="form-row"><div><label for="appointmentDate">Fecha</label><input id="appointmentDate" name="date" type="date" required><div class="availability-calendar" id="availabilityCalendar" aria-label="Disponibilidad de citas"></div><div class="calendar-legend"><span><i class="available-key"></i>Disponible</span><span><i class="booked-key"></i>Ocupado</span></div></div><div><label for="appointmentTime">Horario</label><select id="appointmentTime" name="time" required><option value="">Selecciona</option><option>09:00</option><option>10:30</option><option>12:00</option><option>13:30</option><option>15:00</option><option>16:30</option><option>18:00</option></select></div></div>
+        <label for="appointmentNotes">¿Algo que debamos saber? <span>(opcional)</span></label>
+        <textarea id="appointmentNotes" name="notes" rows="3" maxlength="300" placeholder="Cuéntanos cómo podemos hacer tu visita especial..."></textarea>
+        <button class="button button-dark button-wide" type="submit">Solicitar mi cita <span aria-hidden="true">↗</span></button>
+        <p class="form-disclaimer">La cita queda solicitada y el equipo Daixi confirmará tu horario.</p>
+        <p class="booking-confirmation hidden" id="bookingConfirmation" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="location-section section-wrap" id="ubicacion">
+      <div class="location-copy">
+        <p class="eyebrow">VEN A VISITARNOS</p>
+        <h2>Tu espacio de calma<br><em>está cerca.</em></h2>
+        <p>Te esperamos en Daixi Spa. Agenda tu visita y encuentra el camino hasta nosotras.</p>
+        <address><span aria-hidden="true">⌖</span><span><strong>Daixi Spa</strong><br>Calle Las Palmas #7, Lomas del Rosario<br>Cuautitlán Izcalli, C.P. 54710<br>Estado de México</span></address>
+        <a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Las+Palmas+7%2C+Lomas+del+Rosario%2C+Cuautitl%C3%A1n+Izcalli%2C+54710%2C+Estado+de+M%C3%A9xico" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="map-frame">
+        <iframe title="Mapa de Daixi Spa en Lomas del Rosario, Cuautitlán Izcalli" src="https://maps.google.com/maps?q=Calle%20Las%20Palmas%207%2C%20Lomas%20del%20Rosario%2C%20Cuautitl%C3%A1n%20Izcalli%2C%2054710%2C%20Estado%20de%20M%C3%A9xico&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="admin-section hidden" id="adminPanel">
+      <div class="section-wrap admin-wrap">
+        <div class="admin-heading"><div><p class="eyebrow">PANEL DE ADMINISTRACIÓN</p><h2>Hola, <em id="adminName">Daixi.</em></h2></div><span class="admin-badge">ADMINISTRADOR</span></div>
+        <div class="admin-stats"><article><span>CLIENTES REGISTRADOS</span><strong id="customerCount">0</strong></article><article><span>CITAS AGENDADAS</span><strong id="appointmentCount">0</strong></article><article><span>MEMBRESÍAS</span><strong id="membershipCount">0</strong></article><article><span>PEDIDOS RECIBIDOS</span><strong id="orderCount">0</strong></article></div>
+        <div class="admin-columns">
+          <div class="admin-table-card"><h3>Clientes registrados</h3><div class="table-scroll"><table><thead><tr><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Registro</th></tr></thead><tbody id="customerRows"></tbody></table></div><p class="empty-state hidden" id="emptyCustomers">Aún no hay clientes registrados.</p></div>
+          <div class="admin-table-card"><h3>Citas solicitadas</h3><div class="table-scroll"><table><thead><tr><th>Cliente</th><th>Servicio</th><th>Fecha y hora</th><th>Terapeuta</th><th>Estado</th></tr></thead><tbody id="appointmentRows"></tbody></table></div><p class="empty-state hidden" id="emptyAppointments">Aún no hay citas solicitadas.</p></div>
+          <div class="admin-table-card"><h3>Solicitudes de membresía</h3><div class="table-scroll"><table><thead><tr><th>Correo</th><th>Teléfono</th><th>Fecha</th><th>Estado</th></tr></thead><tbody id="membershipRows"></tbody></table></div><p class="empty-state hidden" id="emptyMemberships">Aún no hay solicitudes de membresía.</p></div>
+          <div class="admin-table-card"><h3>Pedidos recibidos</h3><div class="table-scroll"><table><thead><tr><th>Correo</th><th>Productos</th><th>Total</th><th>Estado</th></tr></thead><tbody id="orderRows"></tbody></table></div><p class="empty-state hidden" id="emptyOrders">Aún no hay pedidos.</p></div>
+        </div>
+        <p class="admin-notice">Este panel muestra los datos guardados en este navegador. Para administrar datos de clientes en distintos dispositivos, se requiere una base de datos y un servidor seguro.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">d</span><span class="brand-name">daixi<span>spa</span></span></a><p>Un espacio para volver a ti.</p><span>© <span id="currentYear"></span> Daixi Spa · Hecho con calma.</span></footer>
+
+  <dialog class="account-dialog" id="accountDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="closeDialog" aria-label="Cerrar">×</button>
+    <div class="dialog-brand"><span class="brand-mark" aria-hidden="true">d</span></div>
+    <p class="eyebrow">QUÉ BUENO TENERTE AQUÍ</p><h2 id="dialogTitle">Un momento <em>para ti.</em></h2>
+    <div class="auth-tabs" role="tablist"><button class="auth-tab active" id="loginTab" role="tab" aria-selected="true">Iniciar sesión</button><button class="auth-tab" id="registerTab" role="tab" aria-selected="false">Crear cuenta</button></div>
+    <form class="auth-form" id="loginForm">
+      <label for="loginEmail">Correo electrónico</label><input id="loginEmail" type="email" autocomplete="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Ingresa un correo válido, por ejemplo nombre@dominio.com." placeholder="tu@correo.com">
+      <label for="loginPassword">Contraseña</label><input id="loginPassword" type="password" autocomplete="current-password" required minlength="8" title="La contraseña debe tener al menos 8 caracteres." placeholder="Tu contraseña">
+      <button class="button button-dark button-wide" type="submit">Entrar a Daixi <span aria-hidden="true">↗</span></button>
+    </form>
+    <form class="auth-form hidden" id="registerForm">
+      <div class="form-row"><div><label for="registerFirstName">Nombre</label><input id="registerFirstName" name="firstName" required autocomplete="given-name" pattern="\p{L}+(?:[ '\-]\p{L}+)*" title="Escribe solo letras, espacios, apóstrofes o guiones." placeholder="Tu nombre"></div><div><label for="registerLastName">Apellido</label><input id="registerLastName" name="lastName" required autocomplete="family-name" pattern="\p{L}+(?:[ '\-]\p{L}+)*" title="Escribe solo letras, espacios, apóstrofes o guiones." placeholder="Tu apellido"></div></div>
+      <label for="registerEmail">Correo electrónico</label><input id="registerEmail" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+      <label for="registerPhone">Número de teléfono</label><input id="registerPhone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\) .\-]{7,20}" title="Ingresa un número de teléfono válido." placeholder="+52 55 1234 5678">
+      <label for="registerPassword">Contraseña <span>(mínimo 8 caracteres)</span></label><input id="registerPassword" name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="Crea una contraseña">
+      <button class="button button-dark button-wide" type="submit">Crear mi cuenta <span aria-hidden="true">↗</span></button>
+      <p class="form-disclaimer">Tus datos se guardan en este navegador para esta demostración.</p>
+    </form>
+    <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+    <p class="admin-hint">Accesos de demostración para Jessica y Emilio. En un sitio publicado, las cuentas administrativas deben gestionarse desde un servidor seguro.</p>
+  </dialog>
+
+  <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+    <button class="dialog-close" id="closeCart" aria-label="Cerrar carrito">×</button>
+    <p class="eyebrow">TU SELECCIÓN DAIXI</p>
+    <h2 id="cartTitle">Tu carrito <em>bonito.</em></h2>
+    <div class="cart-items" id="cartItems"></div>
+    <p class="cart-empty" id="cartEmpty">Tu carrito está vacío. Agrega algo que te haga bien.</p>
+    <div class="cart-summary hidden" id="cartSummary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0 MXN</strong></div>
+    </div>
+    <form class="checkout-form hidden" id="checkoutForm">
+      <p>Déjanos tus datos y el equipo Daixi te contactará para confirmar el pedido.</p>
+      <label for="orderEmail">Correo electrónico</label><input id="orderEmail" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+      <label for="orderPhone">Número de teléfono</label><input id="orderPhone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\) .\-]{7,20}" title="Ingresa un número de teléfono válido." placeholder="+52 55 1234 5678">
+      <button class="button button-dark button-wide" type="submit">Enviar solicitud de pedido</button>
+    </form>
+    <button class="button button-dark button-wide" id="checkoutButton" disabled>Continuar con mi pedido <span aria-hidden="true">↗</span></button>
+    <p class="form-disclaimer">Pedido sujeto a confirmación de disponibilidad. El pago se coordina directamente con Daixi.</p>
+  </dialog>
+
+  <dialog class="account-dialog membership-dialog" id="membershipDialog" aria-labelledby="membershipTitle">
+    <button class="dialog-close" id="closeMembership" aria-label="Cerrar">×</button>
+    <div class="dialog-brand"><span class="brand-mark" aria-hidden="true">d</span></div>
+    <p class="eyebrow">DAIXI RITUAL CLUB · $2,490 MXN / MES</p>
+    <h2 id="membershipTitle">Tu pausa <em>de cada día.</em></h2>
+    <p class="membership-form-copy">Déjanos tus datos de contacto y te contamos cómo empezar.</p>
+    <form class="auth-form" id="membershipForm">
+      <label for="membershipEmail">Correo electrónico</label><input id="membershipEmail" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+      <label for="membershipPhone">Número de teléfono</label><input id="membershipPhone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+\(\) .\-]{7,20}" title="Ingresa un número de teléfono válido." placeholder="+52 55 1234 5678">
+      <button class="button button-dark button-wide" type="submit">Solicitar información <span aria-hidden="true">↗</span></button>
+    </form>
+    <p class="auth-message" id="membershipMessage" role="status" aria-live="polite"></p>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
